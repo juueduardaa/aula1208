@@ -1,15 +1,18 @@
 -- TABLE
-CREATE TABLE CAMPO(
-  ID INT(4),
-  CIDADE VARCHAR(30) UNIQUE,
-  CAPACIDADE INT(4) NOT NULL
-  );
 CREATE TABLE demo (ID integer primary key, Name varchar(20), Hint text );
-CREATE TABLE jogador(
-  ID INT(4),
-  NOME VARCHAR(30),
-  ESPORTE VARCHAR(30)
-);
+CREATE TABLE funcionarios(
+  id int(10),
+  nome varchar(255),
+  cpf varchar(11),
+  salario int(5)
+  );
+CREATE TABLE reservas(
+  id int(3),
+  nome_cliente varchar(30),
+  quarto int(4),
+  data_entrada date,
+  data_saida date
+  );
  
 -- INDEX
  
